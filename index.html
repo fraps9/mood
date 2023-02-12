@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+  <title>mood</title>
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="wrap">
+    <header id="main_header">
+      <h1><a href="index.html">mood<img src="" alt=""></a></h1>
+      <nav class="gnb">
+        <ul>
+          <li><a href="chart/chart.html">실시간 차트</a></li>
+          <li><a href="new_music/new_music.html">최신 음악</a></li>
+          <li><a href="genre/genre.html">장르별 음악</a></li>
+          <li><a href="theme/theme.html">테마별 음악</a></li>
+          <li><a href="artist/artist.html">아티스트</a></li>
+          <li class="ticket"><a href="ticket/ticket.html">이용권구매</a></li>
+        </ul>
+        <div class="sub_gnb">
+          <button type="button" class="login">로그인/회원가입</button>
+          <a href="#" class="search">검색</a>
+          <input type="text" class="search_area">
+        </div>
+      </nav>
+    </header>
+    <div id="content_wrap">
+      <!-- 최신음악 -->
+      <div class="new_album">  
+        <h2><a href="new_music/new_music.html">최신음악<span></span></a></h2>
+        <div class="content">
+          <div class="slide_wrap swiper">
+            <div class="slide_container swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <figure>
+                    <img src="img/main/main_slide1.png" alt="">
+                    <figcaption>Kik5o - 달바람</figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <figure>
+                    <img src="img/main/main_slide2.png" alt="">
+                    <figcaption>정승환 - 겨울이 좋아졌어</figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <figure>
+                    <img src="img/main/main_slide3.png" alt="">
+                    <figcaption>더 브릿지 - 보내는 것도 사랑이겠죠</figcaption>
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contents">
+            <ul>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img src="img/main/main_new1.png">
+                    <figcaption><span>SUDI</span><span>Welcome to My Christmas (Feat. 윤새 & 0back)</span></figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img src="img/main/main_new2.png">
+                    <figcaption><span>CIELOGROOVE</span><span>Everyday Christmas (Feat. TAN)</span></figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img src="img/main/main_new3.png">
+                    <figcaption><span>헤이 달리</span><span>이렇게 우린</span></figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img src="img/main/main_new4.png">
+                    <figcaption><span>Always Summer</span><span>Always</span></figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img src="img/main/main_new5.png">
+                    <figcaption><span>해주</span><span>너의 결혼식, 너의 장례식</span></figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img src="img/main/main_new6.png">
+                    <figcaption><span>나인</span><span>DSP</span></figcaption>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 아티스트 -->
+      <div class="artist">
+        <h2><a href="artist/artist.html">아티스트<span></span></a></h2>
+        <div class="rolling_box">
+          <div class="rolling_content">
+            <ul>
+              <li><a href="#"><img src="img/main/main_artist1.png" alt="">아이유</a></li>
+              <li><a href="#"><img src="img/main/main_artist2.png" alt="">방탄소년단</a></li>
+              <li><a href="#"><img src="img/main/main_artist3.png" alt="">임영웅</a></li>
+              <li><a href="#"><img src="img/main/main_artist4.png" alt="">SG워너비</a></li>
+              <li><a href="#"><img src="img/main/main_artist5.png" alt="">백지영</a></li>
+              <li><a href="#"><img src="img/main/main_artist6.png" alt="">코요태</a></li>
+            </ul>
+          </div>
+          <a href="#" class="prev">PREV</a>
+          <a href="#" class="next">NEXT</a>
+        </div>
+      </div>
+      <!-- 실시간 차트 -->
+      <div class="chart">
+        <h2><a href="chart/chart.html">실시간 차트<span></span></a></h2>
+        <table>
+          <caption>곡 리스트</caption>
+          <thead>
+            <tr>
+              <th scope="col" class="hd-number">순위</th>
+              <th scope="col" class="hd-info">곡정보</th>
+              <th scope="col" class="hd-btns">듣기</th>
+              <th scope="col" class="hd-btns">추가</th>
+              <th scope="col" class="hd-more">더보기</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="list">
+              <td class="number">1</td>
+              <td class="info">
+                <a href="#">
+                  <img src="img/main/chart_list1.png" alt="">
+                </a>
+                <a href="#">사건의 지평선</a>
+                <a href="#">윤하</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="play">듣기</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="add">재생목록에 추가</a>
+              </td>
+              <td class="more">
+                <a href="#">더보기</a>
+              </td>
+            </tr>
+            <tr class="list">
+              <td class="number">2</td>
+              <td class="info">
+                <a href="#">
+                  <img src="img/main/chart_list2.png" alt="">
+                </a>
+                <a href="#">Hype boy</a>
+                <a href="#">NewJeans</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="play">듣기</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="add">재생목록에 추가</a>
+              </td>
+              <td class="more">
+                <a href="#">더보기</a>
+              </td>
+            </tr>
+            <tr class="list">
+              <td class="number">3</td>
+              <td class="info">
+                <a href="#">
+                  <img src="img/main/chart_list3.png" alt="">
+                </a>
+                <a href="#">ANTIFRAGILE</a>
+                <a href="#">LE SSERAFIM (르세라핌)</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="play">듣기</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="add">재생목록에 추가</a>
+              </td>
+              <td class="more">
+                <a href="#">더보기</a>
+              </td>
+            </tr>
+            <tr class="list">
+              <td class="number">4</td>
+              <td class="info">
+                <a href="#">
+                  <img src="img/main/chart_list4.png" alt="">
+                </a>
+                <a href="#">After LIKE</a>
+                <a href="#">IVE (아이브)</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="play">듣기</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="add">재생목록에 추가</a>
+              </td>
+              <td class="more">
+                <a href="#">더보기</a>
+              </td>
+            </tr>
+            <tr class="list">
+              <td class="number">5</td>
+              <td class="info">
+                <a href="#">
+                  <img src="img/main/chart_list5.png" alt="">
+                </a>
+                <a href="#">NXde</a>
+                <a href="#">(여자)아이들</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="play">듣기</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="add">재생목록에 추가</a>
+              </td>
+              <td class="more">
+                <a href="#">더보기</a>
+              </td>
+            </tr>
+            <tr class="list">
+              <td class="number">6</td>
+              <td class="info">
+                <a href="#">
+                  <img src="img/main/chart_list6.png" alt="">
+                </a>
+                <a href="#">마이웨이 (MY WAY) (Prod. by R.Tee)</a>
+                <a href="#">저스디스 (JUSTHIS) & R.Tee & 던말릭 (DON MALIK) & 허성현 (Huh) & KHAN & 맥대디 (Mckdaddy) & Los</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="paly">듣기</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="add">재생목록에 추가</a>
+              </td>
+              <td class="more">
+                <a href="#">더보기</a>
+              </td>
+            </tr>
+            <tr class="list">
+              <td class="number">7</td>
+              <td class="info">
+                <a href="#">
+                  <img src="img/main/chart_list7.png" alt="">
+                </a>
+                <a href="#">사랑은 늘 도망가</a>
+                <a href="#">임영웅</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="play">듣기</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="add">재생목록에 추가</a>
+              </td>
+              <td class="more">
+                <a href="#">더보기</a>
+              </td>
+            </tr>
+            <tr class="list">
+              <td class="number">8</td>
+              <td class="info">
+                <a href="#">
+                  <img src="img/main/chart_list8.png" alt="">
+                </a>
+                <a href="#">쌔삥 (Prod. by ZICO) (Feat. 호미들)</a>
+                <a href="#">지코 (ZICO)</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="play">듣기</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="add">재생목록에 추가</a>
+              </td>
+              <td class="more">
+                <a href="#">더보기</a>
+              </td>
+            </tr>
+            <tr class="list">
+              <td class="number">9</td>
+              <td class="info">
+                <a href="#">
+                  <img src="img/main/chart_list2.png" alt="">
+                </a>
+                <a href="#">Attention</a>
+                <a href="#">NewJeans</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="play">듣기</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="add">재생목록에 추가</a>
+              </td>
+              <td class="more">
+                <a href="#">더보기</a>
+              </td>
+            </tr>
+            <tr class="list">
+              <td class="number">10</td>
+              <td class="info">
+                <a href="#">
+                  <img src="img/main/chart_list9.png" alt="">
+                </a>
+                <a href="#">All I Want for Christmas Is You</a>
+                <a href="#">Mariah Carey</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="play">듣기</a>
+              </td>
+              <td class="btns">
+                <a href="#" class="add">재생목록에 추가</a>
+              </td>
+              <td class="more">
+                <a href="#">더보기</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- 뉴스 -->
+      <div class="news">
+        <h2>NEWS</h2>
+        <div class="news1">
+          <a href="https://www.yna.co.kr/view/AKR20221212059200005?section=entertainment/pop-song">
+            <img src="img/main/main_news1.png" alt="">
+            <p>(여자) 아이들이 중국 왕이윈뮤직 연간 차트 1위를 차지했습니다</p>
+          </a>
+        </div>
+        <div class="news2">
+          <a href="https://www.yna.co.kr/view/AKR20221210017100005?section=entertainment/pop-song">
+            <img src="img/main/main_news2.png" alt="">
+            <p>RM ‘인디고’가 영국 앨범 차트 탑100에 첫 진입했습니다</p>
+          </a>
+        </div>
+      </div>
+      <!-- 장르별 음악 -->
+      <div class="genre">
+        <h2><a href="genre/genre.html">장르별 음악<span></span></a></h2>
+        <ul>
+          <li>
+            <a href="genre/genre_ballad.html">
+              <figure>
+                <img src="img/main/genre1.png" alt="">
+                <figcaption>발라드</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="genre/genre_dance.html">
+              <figure>
+                <img src="img/main/genre2.png" alt="">
+                <figcaption>댄스</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="genre/genre_hippop.html">
+              <figure>
+                <img src="img/main/genre3.png" alt="">
+                <figcaption>힙합</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="genre/genre_pop.html">
+              <figure>
+                <img src="img/main/genre4.png" alt="">
+                <figcaption>팝</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- 시대별 음악 -->
+      <div class="ago">
+        <h2><a href="theme/theme.html">시대별 음악<span></span></a></h2>
+        <ul>
+          <li>
+            <a href="theme/theme_1990.html">
+              <figure>
+                <img src="img/main/ago1.png" alt="">
+                <figcaption>1990년대</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="theme/theme_2000.html">
+              <figure>
+                <img src="img/main/ago2.png" alt="">
+                <figcaption>2000년대</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="theme/theme_2010.html">
+              <figure>
+                <img src="img/main/ago3.png" alt="">
+                <figcaption>2010년대</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="theme/theme_2020.html">
+              <figure>
+                <img src="img/main/ago4.png" alt="">
+                <figcaption>2020년대</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer id="main_footer">
+      <div class="footer_info">
+        <div class="info_top">
+          <p>무드(주) 대표이사 정의정</p>
+          <p>사업자등록번호 <span>980-41-49609</span></p>
+          <p>통신판매업신고번호 제<span>2022</span>-경기안산-<span>9609</span>호</p>
+          <address>
+            <p>주소 경기도 안산시 중앙대로 915</p>
+            <p>대표전화 <span>1234-5678</span></p>
+            <p>이메일 <span>fraps9@nate.com</span></p>
+          </address>
+        </div>
+        <div class="info_bottom">
+          <ul>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">Mood이용약관</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">결제/환불</a></li>
+            <li><a href="#">&copy;Mood Corp.</a></li>
+            <li><a href="ticket/ticket.html">이용권 구매</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="sns">
+        <a href="#" class="facebook">facebook</a>
+        <a href="#" class="instagram">instagram</a>
+      </div>
+    </footer>
+  </div>
+  <script src="script/script_main.js"></script>
+</body>
+</html>
