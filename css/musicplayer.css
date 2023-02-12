@@ -1,0 +1,104 @@
+@import url(default.css);
+
+body,div,h2,p,audio{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: "Poppins";
+  height: 100vh;
+}
+.wrapper{
+  height: 100%;
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgb(97, 9, 121) 0%, rgb(89, 0, 255) 78%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none; /* auto(default) , all-클릭으로선택 , none , text-한글선택만간으 */
+}
+.play-body{
+  width: 80%;
+  height: auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.m-top{ margin-bottom: 25px;}
+.m-top>h2{
+  font-size: 30px;
+  font-weight: 500;
+  color: #252525;
+  background: linear-gradient(124deg, rgb(26 4 49) 0%, rgb(125 35 228) 49%, rgb(253 253 253) 100%);
+  text-align: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* 그라디언트도 이미지로 들어가기 때문에 clip보다 위에 있어야한다. */
+}
+.m-img{
+  width: 100%;
+  height: 50%;
+  border-radius: 15px;
+  background: #fc9;
+  overflow: hidden;
+}
+.m-img>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* fill(비율유지없이 가득채움) / contain(비율유지,전체이미지) / cover(비율유지가득) / none(크기조절없음) / scale-down(none,contain중 크기 작은값) */
+  object-position: center bottom;
+  /* left,center,right / top,center,bottom % px */
+}
+.m-info{
+  font-size: 20px;
+  margin: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+.m-info .artist{
+  font-size: 18px;
+  color: #626262;
+  font-weight: 300;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.m-progress{
+  height: 6px;
+  width: 100%;
+  border-radius: 3px;
+}
+.m-progress .bar{
+  height: inherit; /* 6px */
+  width: 10%;
+  border-radius: 3px;
+  background: #ff9945;
+}
+.m-progress .timer{
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #5d5d5d;
+}
+.m-control{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.m-control span{
+  font-size: 30px;
+}
+.m-control .play-pause{
+  width: 54px;
+  height: 54px;
+  background: #999;
+  border-radius: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

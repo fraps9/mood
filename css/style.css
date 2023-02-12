@@ -1,0 +1,506 @@
+@import "default.css";
+@import "header.css";
+@import "footer.css";
+
+body{
+  background: #0f042e; color: #fff; font-size: 1.1rem;
+  font-family: "맑은 고딕";
+}
+a{color: #fff;}
+
+@media screen and (min-width:1025px) {
+  #wrap{width: 1200px; height: auto; margin: 0 auto;}
+  /* 메인 헤더 */
+
+  /* 최신 음악 */
+  #content_wrap{
+    padding: 0 4%; overflow: hidden;
+  }
+  #content_wrap h2{
+    width: 100%; height: 40px; margin-bottom: 30px; font-size: 32px;
+    transition: all .4s;
+  }
+  #content_wrap h2 span{
+    display: inline-block; width: 25px; height: 25px;
+    background: url(../img/main/arrow_icon.png) no-repeat right 5px;
+  }
+  #content_wrap>.new_album{
+    width: 100%; overflow: hidden; margin-bottom: 80px;
+  }
+  #content_wrap>.new_album>.content{
+    display: flex; overflow: hidden;
+  }
+  #content_wrap>.new_album>.content>.slide_wrap{
+    width: 440px; height: 414px;
+  }
+  #content_wrap>.new_album>.content>.slide_wrap>.slide_container{
+    width: 440px;
+  }
+  #content_wrap>.new_album>.content>.slide_wrap>.slide_container>div{
+    width: 440px; height: 414px 
+  }
+  #content_wrap>.new_album>.content>.slide_wrap>.slide_container>div>div>a{
+    width: 440px; height: 414px
+  }
+  #content_wrap>.new_album>.content>.slide_wrap>.slide_container figure{
+    width: 440px; overflow: hidden; position: relative;
+  }
+  #content_wrap>.new_album>.content>.slide_wrap>.slide_container figure>img{
+    width: 100%; height: 100%;
+  }
+  #content_wrap>.new_album>.content>.slide_wrap>.slide_container figcaption{
+    width: 440px; height: 15%; text-align: center; padding: 0 5%;
+    background: rgba(0, 0, 0, 0.6); line-height: 62px; box-sizing: border-box;
+    position: absolute; bottom: 0; left: 0; font-size: 28px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+  #content_wrap>.new_album>.content>.contents{
+    width: 672px; height: 414px;
+  }
+  #content_wrap>.new_album>.content>.contents>ul{
+    height: 414px;
+    display: flex; justify-content:space-between;
+    align-content:space-between; flex-wrap: wrap;
+    margin-left: 30px;
+  }
+  #content_wrap>.new_album>.content>.contents figure{
+    width: 100%; overflow: hidden; position: relative;
+  }
+  #content_wrap>.new_album>.content>.contents figure>img{
+    width: 100%; height: 100%;
+  }
+  #content_wrap>.new_album>.content>.contents figcaption{
+    width: 100%; height: 20%; text-align: center; box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6); line-height: 40px;
+    position: absolute; bottom: 0; left: 0; transition: all .2s;
+  }
+  #content_wrap>.new_album>.content>.contents figcaption>span:nth-child(2){
+    display: none; font-size: 0; transition: all 0.2s; margin-top: 10px;
+  }
+  #content_wrap>.new_album>.content>.contents>ul>li:hover figcaption{
+    height: 100%; padding: 15% 10%; 
+  }
+  #content_wrap>.new_album>.content>.contents>ul>li:hover figcaption:hover>span{
+    display: block; line-height: 1.5em; font-size: 1rem;
+  }
+  /* 아티스트 */
+  #content_wrap>.artist{ margin-bottom: 80px;}
+  #content_wrap>.artist>.rolling_box{
+    width: 1104px; position: relative;
+  }
+  #content_wrap>.artist>.rolling_box>.rolling_content{
+    overflow: hidden; width: 1104px; height: 352px;
+  }
+  #content_wrap>.artist>.rolling_box>.rolling_content>ul{
+    display: flex; position: relative;
+  }
+  #content_wrap>.artist>.rolling_box>.rolling_content>ul>li{
+    width: 310px; height: 310px;
+    margin-right: 40px; text-align: center; font-size: 24px;
+  }
+  #content_wrap>.artist>.rolling_box>.rolling_content img{
+    width: 310px; height: 310px;
+    margin-bottom: 10px;
+  }
+  #content_wrap>.artist>.rolling_box>a{
+    display: block; width: 36px; height: 59px; text-indent: -9999px;
+    position: absolute; top: 50%; transform: translateY(-50%); opacity: 0.5;
+  }
+  #content_wrap>.artist>.rolling_box>.prev{
+    background: url(../img/main/right_arrow_icon.png) no-repeat;
+    left: -48px;
+  }
+  #content_wrap>.artist>.rolling_box>.next{
+    background: url(../img/main/left_arrow_icon.png) no-repeat;
+    right: -48px;
+  }
+  /* 실시간 차트 */
+  #content_wrap>.chart{
+    width: 606px; height: 575px; float: left;
+    margin-bottom: 80px;
+  }
+  #content_wrap>.chart>table{
+    width: 606px; height: 504px;
+  }
+  #content_wrap>.chart>table>thead>tr>th{
+    overflow: hidden; height: 0; font-size: 0;
+    line-height: 0; border-bottom: 0; text-indent: -9999px;
+  }
+  #content_wrap>.chart>table>tbody>.list{
+    width: 606px; height: 44px; display: flex; line-height: 44px;
+    border-top: 1px solid #4A4848;
+  }
+  #content_wrap>.chart>table>tbody>.list:last-child{
+    border-bottom: 1px solid #4a4848;
+  }
+  #content_wrap>.chart>table>tbody>.list>.number{
+    width: 64px; height: 44px; text-align: center; font-size: 22px;
+  }
+  #content_wrap>.chart>table>tbody>.list>.info{
+    width: 471px; height: 44px; display: flex;
+  }
+  #content_wrap>.chart>table>tbody>.list>.info>a:nth-child(1)>img{
+    display: none; width: 52px; height: 52px;
+  }
+  #content_wrap>.chart>table>tbody>.list>.info>a:nth-child(2){
+    display: block; width: 387px; height: 44px; box-sizing: border-box;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  #content_wrap>.chart>table>tbody>.list>.info>a:nth-child(3){
+    display: block; width: 155px; height: 44px; box-sizing: border-box;
+    color: #888;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  #content_wrap>.chart>table>tbody>.list>.btns{
+    width: 52px; height: 81px; display: none;
+    position: relative;
+  }
+  #content_wrap>.chart>table>tbody>.list>.btns>a{
+    display: block; width: 36px; height: 36px; text-indent: -9999px;
+    background: url(../img/main/chart_btns.png) no-repeat top center;
+    position: absolute; top: 50%; transform: translateY(-50%);
+  }
+  #content_wrap>.chart>table>tbody>.list>.btns>.add{
+    background: url(../img/main/chart_btns.png) no-repeat center -36px;
+  }
+  #content_wrap>.chart>table>tbody>.list>.more{
+    width: 52px; height: 81px; display: none;
+    position: relative;
+  }
+  #content_wrap>.chart>table>tbody>.list>.more>a{
+    display: block; width: 36px; height: 36px; text-indent: -9999px;
+    background: url(../img/main/more_btn.png) no-repeat center center;
+    position: absolute; top: 50%; transform: translateY(-50%);
+  }
+  #content_wrap>.chart>table>tbody>.list:hover{
+    height: 81px;
+  }
+  #content_wrap>.chart>table>tbody>.list:hover>.number{
+    font-size: 28px; line-height: 81px; height: 81px;
+  }
+  #content_wrap>.chart>table>tbody>.list:hover>.info{
+    line-height: 81px; height: 81px; display: block;
+  }
+  #content_wrap>.chart>table>tbody>.list:hover>.info>a{
+    height: 81px; line-height: 81px;
+  }
+  #content_wrap>.chart>table>tbody>.list:hover>.info>a:nth-child(1)>img{
+    display: block; position: relative; top: 50%; left: 0;
+    transform: translateY(-50%); margin-right: 10px; float: left;
+  }
+  #content_wrap>.chart>table>tbody>.list:hover>.info>a:nth-child(2){
+    width: 316px; height: 40px; line-height: 50px;
+  }
+  #content_wrap>.chart>table>tbody>.list:hover>.info>a:nth-child(3){
+    width: 316px; height: 40px; line-height: 20px;
+  }
+  #content_wrap>.chart>table>tbody>.list:hover>.btns{
+    display: block;
+  }
+  #content_wrap>.chart>table>tbody>.list:hover>.more{
+    display: block;
+  }
+  #content_wrap>.chart>table>tbody>.list:hover>.more>a{
+
+  }
+  /* 뉴스 */
+  #content_wrap>.news{
+    width: 437px; height: 575px; float: right;
+    background: rgba(20,20,20,0.5); box-sizing: border-box;
+    margin-bottom: 80px;
+  }
+  #content_wrap>.news>h2{
+    margin-left: 60px;
+  }
+  #content_wrap>.news>div{
+  width: 315px; overflow: hidden; margin: 0 auto;
+  }
+  #content_wrap>.news>div>a{
+    display: block; width:315px; margin-bottom: 13px;
+  }
+  #content_wrap>.news>.news2>a{
+    margin-bottom: 0;
+  }
+  #content_wrap>.news>div>a>img{
+    margin-bottom: 6px;
+  }
+  #content_wrap>.news>div>a>p{
+    font-size: 1rem; text-decoration: underline;
+  }
+  /* 장르별 음악 */
+  #content_wrap>.genre{
+    clear: both; margin-bottom: 80px;
+  }
+  #content_wrap>.genre>ul{
+    display: flex; flex-direction: row; justify-content: space-between;
+  }
+  #content_wrap>.genre>ul>li{
+    width: 242px; height: 242px; overflow: hidden;
+  }
+  #content_wrap>.genre>ul>li>a>figure{
+    width: 242px; height: 242px; position: relative;
+  }
+  #content_wrap>.genre>ul>li>a>figure>img{
+    width: 242px; height: 242px; transition: all .4s;
+  }
+  #content_wrap>.genre>ul>li:hover>a>figure>img{
+  transform: scale(1.15);
+  }
+  #content_wrap>.genre figcaption{
+    width: 100%; height: 100%; font-size: 24px;
+    position: absolute; top: 0; left: 0;
+    text-align: center; line-height: 242px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  /* 시대별 음악 */
+  #content_wrap>.ago{margin-bottom: 80px;}
+  #content_wrap>.ago>ul{
+    display: flex; flex-direction: row; justify-content: space-between;
+  }
+  #content_wrap>.ago>ul>li{
+    width: 242px; height: 242px; margin-bottom: 40px;
+    overflow: hidden;
+  }
+  #content_wrap>.ago>ul>li>a>figure{
+    width: 242px; height: 242px; position: relative;
+  }
+  #content_wrap>.ago>ul>li>a>figure>img{
+    width: 242px; height: 242px; transition: all .4s;
+  }
+  #content_wrap>.ago>ul>li:hover>a>figure>img{
+    transform: scale(1.15);
+  }
+  #content_wrap>.ago>ul>li>a>figure>figcaption{
+    width: 100%; height: 100%; font-size: 24px;
+    position: absolute; top: 0; left: 0;
+    text-align: center; line-height: 242px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  /* 메인 풋터 */
+}
+
+  
+@media screen and (max-width:1024px) {
+
+  #content_wrap{
+    width: 100%; padding: 0;
+    display: flex; flex-flow: column nowrap;
+  }
+  #content_wrap h2{
+    text-align: center; margin-top: 5%;;
+    font-size: 2rem; margin-bottom: 8%;
+  }
+  #content_wrap h2 span{
+    display: inline-block; width: 25px; height: 25px;
+    background: url(../img/main/arrow_icon.png) no-repeat right 5px;
+  }
+  #content_wrap>.new_album{
+   order: 1; width: 100%;
+  }
+  #content_wrap>.new_album>.content{
+    text-align: center;
+    padding: 0 12%;
+  }
+  #content_wrap>.new_album>.content>.slide_wrap{
+    display: none;
+  }
+  #content_wrap>.new_album>.content>.contents{
+     overflow: hidden;
+  }
+  #content_wrap>.new_album>.content>.contents>ul{
+    margin: 0 auto;
+    display: flex; justify-content:space-between;
+    align-content:space-between; flex-wrap: wrap;
+  }
+  #content_wrap>.new_album>.content>.contents>ul>li{
+   flex: 30%; margin-bottom: 5%;
+  }
+  #content_wrap>.new_album>.content>.contents>ul>li>a{
+    display: block; width: 85%; height: 85%;
+    margin: 0 auto; transition: all .4s;
+  }
+  #content_wrap>.new_album>.content>.contents>ul>li img{
+    width: 100%;
+  }
+  #content_wrap>.new_album>.content>.contents figure{
+    width: 100%; overflow: hidden; position: relative;
+  }
+  #content_wrap>.new_album>.content>.contents figcaption{
+    width: 100%; height: 20%; text-align: center; box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6); 
+    position: absolute; bottom: 0; left: 0; transition: all .2s;
+  }
+  #content_wrap>.new_album>.content>.contents figcaption>span{
+    width: 100%;
+  }
+  #content_wrap>.new_album>.content>.contents figcaption>span:nth-child(1){
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  }
+  #content_wrap>.new_album>.content>.contents figcaption>span:nth-child(2){
+    display: none; font-size: 0; transition: all 0.2s;
+  }
+
+  /* 실시간 차트 */
+  #content_wrap>.chart{
+    width: 100%; order: 2;
+    margin-bottom: 40px;
+  }
+  #content_wrap>.chart>table{
+    overflow: hidden; width: 90%;
+    margin: 0 auto;
+  }
+  #content_wrap>.chart>table>thead>tr>th{
+    overflow: hidden; height: 0; font-size: 0;
+    line-height: 0; border-bottom: 0; text-indent: -9999px;
+  }
+  #content_wrap>.chart>table>tbody>.list{
+    width: 100%; height: 80px; display: flex;
+    border-top: 1px solid #4A4848;
+  }
+  #content_wrap>.chart>table>tbody>.list:last-child{
+    border-bottom: 1px solid #4a4848;
+  }
+  #content_wrap>.chart>table>tbody>.list>.number{
+    width: 64px; height: 80px; text-align: center;
+    font-size: 28px; line-height: 80px; transition: all .4s;
+  }
+  #content_wrap>.chart>table>tbody>.list>.info{
+    width: 90%; padding: 14px 1%;
+    display: block; box-sizing: border-box; 
+  }
+  #content_wrap>.chart>table>tbody>.list>.info>a:nth-child(1){
+    width: 52px; height: 52px;
+    display: block; position: relative; top: 50%; left: 0;
+    transform: translateY(-50%); margin-right: 10px; float: left;
+  }
+  #content_wrap>.chart>table>tbody>.list>.info>a:nth-child(1)>img{
+    width: 100%; height: 100%;
+  }
+  #content_wrap>.chart>table>tbody>.list>.info>a:nth-child(2){
+    font-size: 0.89rem; margin-top: 6px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden; margin-left: 62px;
+  }
+  #content_wrap>.chart>table>tbody>.list>.info>a:nth-child(3){
+    font-size: 0.85rem;
+    color: #888;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden; margin-left: 62px;
+  }
+  #content_wrap>.chart>table>tbody>.list>.btns{
+    width: 52px; height: 81px;
+    position: relative; 
+  }
+  #content_wrap>.chart>table>tbody>.list>td:nth-of-type(4){
+    display: none;
+  }
+  #content_wrap>.chart>table>tbody>.list>.btns>a{
+    display: block; width: 36px; height: 36px; text-indent: -9999px;
+    background: url(../img/main/chart_btns.png) no-repeat top center;
+    position: absolute; top: 50%; transform: translateY(-50%);
+  }
+  #content_wrap>.chart>table>tbody>.list>.btns>.add{
+    background: url(../img/main/chart_btns.png) no-repeat center -36px;
+  }
+  #content_wrap>.chart>table>tbody>.list>.more{
+    width: 52px; height: 81px; 
+    position: relative; display: none;
+  }
+  #content_wrap>.chart>table>tbody>.list>.more>a{
+    display: block; width: 36px; height: 36px; text-indent: -9999px;
+    background: url(../img/main/more_btn.png) no-repeat center center;
+    position: absolute; top: 50%; transform: translateY(-50%);
+  }
+  #content_wrap>.artist{
+    width: 100%; order: 3; margin-bottom: 40px;
+  }
+  #content_wrap>.artist>.rolling_box{
+    width: 100%; position: relative;
+  }
+  #content_wrap>.artist>.rolling_box>.rolling_content{
+    width: 100%; height: auto;
+  }
+  #content_wrap>.artist>.rolling_box>.rolling_content>ul{
+    display: flex; position: relative;
+    justify-content: space-evenly;
+  }
+  #content_wrap>.artist>.rolling_box>.rolling_content>ul>li{
+    width: 30%; height: 30%; text-align: center; 
+  }
+  #content_wrap>.artist>.rolling_box>.rolling_content>ul>li>a{
+    width: 30%; height: 30%;
+    font-size: 1.2rem;
+  }
+  #content_wrap>.artist>.rolling_box>.rolling_content>ul>li:nth-child(4){
+    display: none;
+  }
+  #content_wrap>.artist>.rolling_box>.rolling_content>ul>li:nth-child(5){
+    display: none;
+  }
+  #content_wrap>.artist>.rolling_box>.rolling_content>ul>li:nth-child(6){
+    display: none;
+  }
+  #content_wrap>.artist>.rolling_box>.rolling_content img{
+    width: 100%; height: 100%;
+    margin-bottom: 10px;
+  }
+  #content_wrap>.artist>.rolling_box>a{
+    display: none;
+  }
+  #content_wrap>.news{
+    width: 100%; order: 4; margin-bottom: 60px;
+    display: flex; flex-flow: row wrap;
+  }
+  #content_wrap>.news>h2{
+    width: 100%;
+  }
+  #content_wrap>.news>div{
+    width: 45%; overflow: hidden; margin: 0 auto;
+  }
+  #content_wrap>.news>div>a{
+    display: block; width: 100%; margin-bottom: 13px;
+  }
+  #content_wrap>.news>.news2>a{
+    margin-bottom: 0;
+  }
+  #content_wrap>.news>div>a>img{
+    margin-bottom: 6px; width: 100%; height: 100%;
+  }
+  #content_wrap>.news>div>a>p{
+    font-size: 1rem; text-decoration: underline;
+    transition: all .4s;
+  }
+  #content_wrap>.genre{display: none;}
+  #content_wrap>.ago{display: none;}
+}
+@media screen and (max-width:640px) {
+  #content_wrap h2{
+    width: 100%; height: 40px; margin-bottom: 30px; font-size: 1.5rem; transition: all .4s;
+  }
+  #content_wrap>.new_album>.content>.contents figcaption{
+    font-size: 0.7rem; transition: all .4s;
+  }
+  #content_wrap>.chart>table>tbody>.list>.number{
+    width: 10%; text-align: center; transition: all .4s;
+    font-size: 1.2rem; line-height: 81px;
+  }
+  #content_wrap>.artist>.rolling_box>.rolling_content>ul>li>a{
+    width: 30%; height: 30%; transition: all .4s;
+    font-size: 1rem;
+  }
+  #content_wrap>.news>div>a>p{
+    font-size: 0.8rem; text-decoration: underline;
+    transition: all .4s;
+  }
+}

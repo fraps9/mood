@@ -1,0 +1,372 @@
+@import "default.css";
+@import "header.css";
+@import "footer.css";
+
+body{
+  background: #0f042e; color: #fff; font-size: 18px;
+  font-family: "맑은 고딕";
+}
+a{color: #fff;}
+@media screen and (min-width:1025px) {
+  #wrap{width: 1200px; height: auto; margin: 0 auto;}
+
+  #main_header{
+    margin-bottom: 0;
+  }
+  #content_wrap{
+    width: 100%; overflow: hidden;
+  }
+  #content_wrap h2{
+    width: 100%; height:120px; line-height: 120px; text-align: center;
+    border-bottom: 1px solid #4a4c5b; box-sizing: border-box;
+    font-size: 32px;
+  }
+  #ticket_wrap{
+    width: 1000px; overflow: hidden;
+    margin: 0 auto;
+  }
+  #ticket_wrap>.ticket1{
+    overflow: hidden; width: 100%;
+  }
+  #ticket_wrap>.ticket1>h3{
+    font-size: 28px; width: 100%; display: flex;
+    align-items: flex-end; margin-top: 40px; margin-bottom: 20px;
+  }
+  #ticket_wrap>.ticket1>h3>span{
+    display: block; width: 114px; height: 32px; background: #555;
+    font-size: 18px; border-radius: 16px; text-align: center; line-height: 32px;
+    margin-left: 20px;
+  }
+  #ticket_wrap>.ticket1>.innerbox{
+    width: 1000px; height: 200px; background: url(../img/ticket/ticket_bg.png) no-repeat;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+    padding: 0 4%; box-sizing: border-box; margin-bottom: 20px;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.text{
+    width: 438px;
+    position: relative;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.text::after{
+    content: "";
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    right: 0;
+    width: 1px;
+    background: rgba(255,255,255,0.2);
+    z-index: 100;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.text>p{
+    font-size: 30px;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.text>p>span{
+    display: block; font-size: 18px; margin-top: 8px;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.text>p>a{
+    display: inline-block; width: 22px; height: 22px; text-indent: -9999px;
+    background: url(../img/ticket/info_icon.png) no-repeat;
+    line-height: 22px;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.buy{
+    display: flex; font-size: 24px;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.buy>a{
+    width: 88px; height: 38px; line-height: 38px;
+    border-radius: 19px; background: #362323; text-align: center;
+    margin-left: 20px;
+  }
+  #ticket_wrap>.ticket2{
+    overflow: hidden; width: 100%; margin-bottom: 40px;
+  }
+  #ticket_wrap>.ticket2>h3{
+    font-size: 28px; width: 100%; display: flex;
+    align-items: flex-end; margin-top: 40px; margin-bottom: 20px;
+  }
+  #ticket_wrap>.ticket2>.innerbox{
+    width: 1000px; height: 200px; background: #fff;
+    display: flex; flex-flow: row nowrap; color: #333;
+    justify-content: space-between; align-items: center;
+    padding: 0 4%; box-sizing: border-box; margin-bottom: 20px;
+    border-radius: 25px;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.text{
+    width: 438px;
+    position: relative;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.text::after{
+    content: "";
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    right: 0;
+    width: 1px;
+    background: rgba(0,0,0,0.05);
+    z-index: 100;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.text>p{
+    font-size: 30px; color: #4f55e4;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.text>p>span{
+    display: block; font-size: 18px; margin-top: 8px;
+    color: #333;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.text>p>a{
+    display: inline-block; width: 22px; height: 22px; text-indent: -9999px;
+    background: url(../img/ticket/info_icon_grey.png) no-repeat;
+    line-height: 22px;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.buy{
+    display: flex; font-size: 24px;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.buy>a{
+    width: 88px; height: 38px; line-height: 38px;
+    border-radius: 19px; background: #362323; text-align: center;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width:1024px) {
+  #content_wrap{
+    width: 100%; overflow: hidden;
+  }
+  #content_wrap h2{
+    width: 100%; height:120px; line-height: 120px; text-align: center;
+    border-bottom: 1px solid #4a4c5b; box-sizing: border-box;
+    font-size: 32px; display: none;
+  }
+  #ticket_wrap{
+    width: 90%; overflow: hidden;
+    margin: 0 auto;
+  }
+  #ticket_wrap>.ticket1{
+    overflow: hidden; width: 100%;
+  }
+  #ticket_wrap>.ticket1>h3{
+    font-size: 1.2rem; width: 100%; display: flex;
+    align-items: flex-end; margin-top: 40px; margin-bottom: 20px;
+    transition: all 0.4s;
+  }
+  #ticket_wrap>.ticket1>h3>span{
+    display: block; width: 74px; height: 26px; background: #555;
+    font-size: 0.7rem; border-radius: 13px; text-align: center; line-height: 26px;
+    margin-left: 10px; transition: all 0.4s;
+  }
+  #ticket_wrap>.ticket1>.innerbox{
+    width: 100%; height: 100%; background: url(../img/ticket/ticket_bg.png) no-repeat;
+    background-size:cover; display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+    padding: 6% 4%; box-sizing: border-box; margin-bottom: 20px;
+    border-radius: 15px;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.text{
+    width: 40%; transition: all 0.4s;
+    position: relative;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.text::after{
+    content: "";
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    right: 0;
+    width: 1px;
+    background: rgba(255,255,255,0.2);
+    z-index: 100;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.text>p{
+    font-size: 1rem; transition: all 0.4s;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.text>p>span{
+    display: block; font-size: 0.8rem; margin-top: 4px;
+    transition: all 0.4s;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.text>p>a{
+    display: inline-block; width: 14px; height: 14px; text-indent: -9999px;
+    background: url(../img/ticket/info_icon.png) no-repeat;
+    line-height: 14px; background-size: cover; transition: all 0.4s;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.buy{
+    display: flex; 
+  }
+  #ticket_wrap>.ticket1>.innerbox>.buy>p{
+    font-size: 1rem; line-height: 28px; transition: all 0.4s;
+    font-weight: bold;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.buy>a{
+    width: 52px; height: 28px; line-height: 28px;
+    border-radius: 14px; background: #362323; text-align: center;
+    margin-left: 10px; font-size: 1rem; transition: all 0.4s;
+  }
+  #ticket_wrap>.ticket2{
+    overflow: hidden; width: 100%; margin-bottom: 40px;
+  }
+  #ticket_wrap>.ticket2>h3{
+    font-size: 1.2rem; width: 100%; display: flex; transition: all 0.4s;
+    align-items: flex-end; margin-top: 40px; margin-bottom: 20px;
+  }
+  #ticket_wrap>.ticket2>.innerbox{
+    width: 100%; height: 100%; background: #fff;
+    display: flex; flex-flow: row nowrap; color: #333;
+    justify-content: space-between; align-items: center;
+    padding: 6% 4%; box-sizing: border-box; margin-bottom: 20px;
+    border-radius: 15px;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.text{
+    width: 40%; position: relative;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.text::after{
+    content: "";
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    right: 0;
+    width: 1px;
+    background: rgba(0,0,0,0.05);
+    z-index: 100;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.text>p{
+    font-size: 1rem; transition: all 0.4s;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.text>p>span{
+    display: block; font-size: 0.8rem; margin-top: 4px; transition: all 0.4s;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.text>p>a{
+    display: inline-block; width: 14px; height: 14px; text-indent: -9999px;
+    background: url(../img/ticket/info_icon_grey.png) no-repeat;
+    line-height: 14px; background-size: cover;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.buy{
+    display: flex;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.buy>p{
+    font-size: 1rem; line-height: 28px; transition: all 0.4s;
+    font-weight: bold;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.buy>a{
+    width: 52px; height: 28px; line-height: 28px;
+    border-radius: 14px; background: #362323; text-align: center;
+    margin-left: 10px; font-size: 1rem; transition: all 0.4s;
+  }
+}
+@media screen and (max-width:640px) {
+  #content_wrap{
+    width: 100%; overflow: hidden;
+  }
+  #content_wrap h2{
+    width: 100%; height:120px; line-height: 120px; text-align: center;
+    border-bottom: 1px solid #4a4c5b; box-sizing: border-box;
+    font-size: 32px; display: none;
+  }
+  #ticket_wrap{
+    width: 90%; overflow: hidden;
+    margin: 0 auto;
+  }
+  #ticket_wrap>.ticket1{
+    overflow: hidden; width: 100%;
+  }
+  #ticket_wrap>.ticket1>h3{
+    font-size: 1rem; width: 100%; display: flex;
+    align-items: flex-end; margin-top: 40px; margin-bottom: 20px;
+  }
+  #ticket_wrap>.ticket1>h3>span{
+    display: block; width: 54px; height: 18px; background: #555;
+    font-size: 0.5rem; border-radius: 13px; text-align: center; line-height: 18px;
+    margin-left: 5px; transition: all 0.4s;
+  }
+  #ticket_wrap>.ticket1>.innerbox{
+    width: 100%; height: 100%; background: url(../img/ticket/ticket_bg.png) no-repeat;
+    background-size:cover; display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+    padding: 6% 4%; box-sizing: border-box; margin-bottom: 20px;
+    border-radius: 15px;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.text{
+    width: 50%; transition: all 0.4s;
+    position: relative;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.text::after{
+    content: "";
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    right: 0;
+    width: 1px;
+    background: rgba(255,255,255,0.2);
+    z-index: 100;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.text>p{
+    font-size: 1rem; transition: all 0.4s;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.text>p>span{
+    display: block; font-size: 0.75rem; margin-top: 4px;
+    transition: all 0.4s;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.text>p>a{
+    display: inline-block; width: 14px; height: 14px; text-indent: -9999px;
+    background: url(../img/ticket/info_icon.png) no-repeat;
+    line-height: 14px; background-size: cover; transition: all 0.4s;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.buy{
+    display: flex; 
+  }
+  #ticket_wrap>.ticket1>.innerbox>.buy>p{
+    font-size: 1rem; line-height: 28px; font-weight: bold;
+    transition: all 0.4s;
+  }
+  #ticket_wrap>.ticket1>.innerbox>.buy>a{
+    width: 52px; height: 28px; line-height: 28px;
+    border-radius: 14px; background: #362323; text-align: center;
+    margin-left: 10px; font-size: 0.81rem; transition: all 0.4s;
+  }
+  #ticket_wrap>.ticket2{
+    overflow: hidden; width: 100%; margin-bottom: 40px;
+  }
+  #ticket_wrap>.ticket2>h3{
+    font-size: 1rem; width: 100%; display: flex;
+    align-items: flex-end; margin-top: 40px; margin-bottom: 20px;
+    transition: all 0.4s;
+  }
+  #ticket_wrap>.ticket2>.innerbox{
+    width: 100%; height: 100%; background: #fff;
+    display: flex; flex-flow: row nowrap; color: #333;
+    justify-content: space-between; align-items: center;
+    padding: 6% 4%; box-sizing: border-box; margin-bottom: 20px;
+    border-radius: 15px;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.text{
+    width: 50%; position: relative; transition: all 0.4s;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.text::after{
+    content: "";
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    right: 0;
+    width: 1px;
+    background: rgba(0,0,0,0.05);
+    z-index: 100;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.text>p{
+    font-size: 1rem; transition: all 0.4s;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.text>p>span{
+    display: block; font-size: 0.75rem; margin-top: 4px;
+    transition: all 0.4s;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.text>p>a{
+    display: inline-block; width: 14px; height: 14px; text-indent: -9999px;
+    background: url(../img/ticket/info_icon_grey.png) no-repeat;
+    line-height: 14px; background-size: cover;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.buy{
+    display: flex;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.buy>p{
+    font-size: 1rem; line-height: 28px; font-weight: bold;
+    transition: all 0.4s;
+  }
+  #ticket_wrap>.ticket2>.innerbox>.buy>a{
+    width: 52px; height: 28px; line-height: 28px;
+    border-radius: 14px; background: #362323; text-align: center;
+    margin-left: 10px; font-size: 0.81rem; transition: all 0.4s;
+  }
+}
